@@ -1,0 +1,3 @@
+@echo off
+echo Starting CreatorHub React App...
+npm start
