@@ -10,28 +10,28 @@ const Creators = () => {
 
   const faqData = [
     {
-      question: "What is CreatorHub and how does it work?",
-      answer: "CreatorHub is a platform that connects content creators with brands for paid opportunities. You can participate in challenges or secure direct partnerships to earn money from your content."
+      question: "How do I submit a tryout?",
+      answer: "Browse available briefs in our marketplace, select one that matches your skills, then submit your tryout via video link or file upload along with any additional notes to make your submission stand out."
     },
     {
-      question: "Do I need a certain number of followers to participate?",
-      answer: "No! We believe great content matters more than follower count. Many of our top-earning creators started with small audiences and grew through the platform."
+      question: "What types of rewards can I win?",
+      answer: "You can win cash payments processed via Stripe, products sent directly to you, promotional features on brand social media, affiliate links/codes, or exclusive experiences like VIP event access."
     },
     {
-      question: "How much money can I make?",
-      answer: "Earnings vary based on your activity and content quality. Creators earn anywhere from $100-$5,000+ per month. Top performers make $10,000+ monthly through consistent participation."
+      question: "How do I track my submission status?",
+      answer: "Your creator dashboard shows all your active briefs, past submissions, and real-time status updates. You'll see if your submission is New, Shortlisted, or Winner, plus get instant notifications."
     },
     {
-      question: "How and when do I get paid?",
-      answer: "Payments are processed within 7 days of campaign completion. We support PayPal, bank transfers, and other secure payment methods with no hidden fees."
+      question: "Do I need a large following to win?",
+      answer: "No! Quality content and creativity matter more than follower count. Many of our winning creators started with small audiences and built their following through the platform."
     },
     {
-      question: "What types of content do brands want?",
-      answer: "Brands look for authentic content across all niches - fashion, tech, fitness, food, lifestyle, and more. The key is creating engaging content that resonates with your audience."
+      question: "How quickly do I get rewarded if I win?",
+      answer: "Cash rewards are processed instantly via Stripe Connect payouts. Product rewards are shipped directly by brands, and promotional features go live immediately on their social channels."
     },
     {
-      question: "Is CreatorHub free to use?",
-      answer: "Yes! CreatorHub is completely free for creators. We only succeed when you succeed, so there are no membership fees or hidden costs."
+      question: "Is there a cost to join as a creator?",
+      answer: "The platform is completely free for creators. There's an optional Pro plan for $29.99/month with additional features, but you can win rewards without any subscription."
     }
   ];
 
@@ -41,9 +41,9 @@ const Creators = () => {
       <section className="hero creators-hero">
         <div className="hero-container">
           <div className="hero-content">
-            <h1>Get Paid to <span>Create Content</span></h1>
-            <p>Turn your creativity into income. Compete in brand challenges, secure direct partnerships, and get paid for content that performs. No follower requirements, just great content.</p>
-            <button className="cta-primary">Start Creating Today</button>
+            <h1>Create for the Brands <span>You Believe In</span></h1>
+            <p>Join the ultimate creator tryout marketplace. Submit your best content to brands, leagues, streamers, and athletes. Win cash, products, promo features, and exclusive experiences.</p>
+            <button className="cta-primary">Join as Creator</button>
           </div>
           <div className="hero-visual">
             <div className="creator-earnings-card">
@@ -68,16 +68,16 @@ const Creators = () => {
         <div className="container">
           <div className="section-header">
             <span className="section-tag">HOW IT WORKS</span>
-            <h2>Your Path to Paid Content Creation</h2>
-            <p>CreatorHub connects you with brands looking for authentic content. Here's how you can start earning from your creativity.</p>
+            <h2>Your Creator Tryout Journey</h2>
+            <p>Connect with brands, leagues, streamers, and athletes through our tryout marketplace. Here's how to start winning rewards.</p>
           </div>
           
           <div className="process-steps">
             <div className="step">
               <div className="step-content">
                 <div className="step-number">01</div>
-                <h3>Set Up Your Profile</h3>
-                <p>Create your creator profile, showcase your style, and tell brands what makes your content unique. No minimum follower count required.</p>
+                <h3>Build Your Creator Profile</h3>
+                <p>Create your profile with username, social handles, portfolio, and follower counts. Showcase your content style and build your Creator ID.</p>
                 <button className="step-cta">Create Profile</button>
               </div>
               <div className="step-visual">
@@ -110,9 +110,9 @@ const Creators = () => {
             <div className="step reverse">
               <div className="step-content">
                 <div className="step-number">02</div>
-                <h3>Browse Paid Opportunities</h3>
-                <p>Discover brand challenges and direct partnership opportunities. Choose campaigns that match your style and audience.</p>
-                <button className="step-cta">View Opportunities</button>
+                <h3>Browse Brief Marketplace</h3>
+                <p>Explore briefs from brands, leagues, streamers, and athletes. Find opportunities that match your skills and interests.</p>
+                <button className="step-cta">Browse Briefs</button>
               </div>
               <div className="step-visual">
                 <div className="opportunities-grid">
@@ -135,9 +135,9 @@ const Creators = () => {
             <div className="step">
               <div className="step-content">
                 <div className="step-number">03</div>
-                <h3>Create & Submit Content</h3>
-                <p>Do what you do best! Create engaging content following brand guidelines and submit directly through our platform.</p>
-                <button className="step-cta">Start Creating</button>
+                <h3>Submit Your Tryout</h3>
+                <p>Create compelling content and submit via video links or uploads. Add notes to make your tryout stand out from the competition.</p>
+                <button className="step-cta">Submit Tryout</button>
               </div>
               <div className="step-visual">
                 <div className="content-creation-mockup">
@@ -161,9 +161,9 @@ const Creators = () => {
             <div className="step reverse">
               <div className="step-content">
                 <div className="step-number">04</div>
-                <h3>Get Paid for Performance</h3>
-                <p>Earn money when your content performs well. Get paid for winning challenges or completing direct partnerships.</p>
-                <button className="step-cta">View Earnings</button>
+                <h3>Win Amazing Rewards</h3>
+                <p>Get selected and receive cash via Stripe, products, promotional features, affiliate links, or exclusive experiences.</p>
+                <button className="step-cta">View Rewards</button>
               </div>
               <div className="step-visual">
                 <div className="earnings-dashboard">
@@ -200,24 +200,24 @@ const Creators = () => {
         <div className="container">
           <div className="section-header">
             <span className="section-tag">WHY CREATORS CHOOSE US</span>
-            <h2>Built for Creator Success</h2>
-            <p>We've designed every feature to help creators like you maximize earnings and build lasting brand relationships.</p>
+            <h2>The Ultimate Tryout Platform</h2>
+            <p>We've built the perfect marketplace for creators to showcase their talent and win amazing rewards from top brands.</p>
           </div>
           <div className="benefits-grid">
             <div className="benefit-card">
               <div className="benefit-icon">💰</div>
-              <h3>No Follower Requirements</h3>
-              <p>Quality content matters more than follower count. Micro-creators often outperform mega-influencers in our challenges.</p>
+              <h3>Multiple Reward Types</h3>
+              <p>Win cash payments, products, promotional features, affiliate opportunities, or exclusive experiences based on your tryout quality.</p>
             </div>
             <div className="benefit-card">
               <div className="benefit-icon">🎯</div>
-              <h3>Multiple Revenue Streams</h3>
-              <p>Earn from competitions, direct partnerships, and performance bonuses. Diversify your creator income effortlessly.</p>
+              <h3>Real-Time Status Tracking</h3>
+              <p>Monitor your submissions with live status updates: New, Shortlisted, or Winner. Stay informed throughout the selection process.</p>
             </div>
             <div className="benefit-card">
               <div className="benefit-icon">⚡</div>
-              <h3>Fast & Fair Payments</h3>
-              <p>Get paid quickly through secure payment systems. Transparent pricing with no hidden fees or complicated terms.</p>
+              <h3>Instant Notifications</h3>
+              <p>Get notified immediately when your status changes or when new briefs match your interests. Never miss an opportunity.</p>
             </div>
           </div>
         </div>
@@ -227,8 +227,8 @@ const Creators = () => {
       <section className="opportunity-types">
         <div className="container">
           <div className="section-header">
-            <h2>Two Ways to Earn</h2>
-            <p>Choose the earning model that works best for your content style and schedule</p>
+            <h2>Types of Opportunities</h2>
+            <p>Discover diverse briefs from brands, leagues, streamers, and athletes across all content categories</p>
           </div>
           
           <div className="opportunity-cards">
@@ -236,22 +236,22 @@ const Creators = () => {
               <div className="opportunity-type-card">
                 <div className="card-header">
                   <div className="card-icon">🏆</div>
-                  <h3>Brand Challenges</h3>
+                  <h3>Brand Briefs</h3>
                 </div>
                 <div className="card-content">
-                  <p>Compete with other creators for prize pools. Best performing content wins the rewards.</p>
+                  <p>Submit tryouts for brand campaigns and win cash, products, or promotional features.</p>
                   <ul className="feature-list">
-                    <li>Prize pools from $100 to $5,000</li>
-                    <li>Performance-based rewards</li>
-                    <li>Creative freedom within guidelines</li>
-                    <li>Build your portfolio</li>
+                    <li>Cash rewards via Stripe payouts</li>
+                    <li>Product rewards sent directly</li>
+                    <li>Social media promotional features</li>
+                    <li>Build your creator portfolio</li>
                   </ul>
                   <div className="card-example">
-                    <span className="example-label">Recent Challenge:</span>
-                    <span className="example-text">"Summer Fashion Haul" - $2,500 prize pool</span>
+                    <span className="example-label">Recent Brief:</span>
+                    <span className="example-text">"Tech Product Review" - $1,500 cash reward</span>
                   </div>
                 </div>
-                <button className="card-cta">Browse Challenges</button>
+                <button className="card-cta">Browse Brand Briefs</button>
               </div>
             </ScrollAnimatedSection>
 
@@ -260,22 +260,22 @@ const Creators = () => {
                 <div className="featured-badge">Most Popular</div>
                 <div className="card-header">
                   <div className="card-icon">🤝</div>
-                  <h3>Direct Partnerships</h3>
+                  <h3>Sports & Entertainment</h3>
                 </div>
                 <div className="card-content">
-                  <p>Work directly with brands on custom content with guaranteed payments.</p>
+                  <p>Submit tryouts for leagues, streamers, and athletes looking for fresh content creators.</p>
                   <ul className="feature-list">
-                    <li>Fixed payments $50 - $2,000</li>
-                    <li>Guaranteed earnings</li>
-                    <li>Long-term brand relationships</li>
-                    <li>Exclusive opportunities</li>
+                    <li>Affiliate link opportunities</li>
+                    <li>Exclusive event experiences</li>
+                    <li>Long-term creator partnerships</li>
+                    <li>Access to exclusive content</li>
                   </ul>
                   <div className="card-example">
-                    <span className="example-label">Recent Partnership:</span>
-                    <span className="example-text">"Tech Review Series" - $800 per video</span>
+                    <span className="example-label">Recent Brief:</span>
+                    <span className="example-text">"Gaming Tournament Highlights" - VIP event access</span>
                   </div>
                 </div>
-                <button className="card-cta">Find Partnerships</button>
+                <button className="card-cta">View Sports Briefs</button>
               </div>
             </ScrollAnimatedSection>
           </div>
@@ -287,7 +287,7 @@ const Creators = () => {
         <div className="container">
           <div className="section-header">
             <h2>Creator Success Stories</h2>
-            <p>See how creators are building sustainable income streams with CreatorHub</p>
+            <p>See how creators are winning amazing rewards and building their careers through our tryout marketplace</p>
           </div>
           
           <div className="stories-grid">
@@ -301,7 +301,7 @@ const Creators = () => {
                   </div>
                 </div>
                 <div className="story-content">
-                  <p>"I went from $200/month to $3,500/month in just 4 months. The direct partnerships changed everything for my creator business."</p>
+                  <p>"I've won 8 tryouts in 3 months and earned over $4,000 in cash rewards. Plus I got featured on 3 major brand social accounts!"</p>
                 </div>
                 <div className="story-stats">
                   <div className="story-stat">
@@ -326,7 +326,7 @@ const Creators = () => {
                   </div>
                 </div>
                 <div className="story-content">
-                  <p>"Started with 2K followers and won my first $1,000 challenge. Now brands reach out to me directly for partnerships."</p>
+                  <p>"My first tryout win was $800 cash! Now I consistently get shortlisted and have built amazing relationships with brands."</p>
                 </div>
                 <div className="story-stats">
                   <div className="story-stat">
@@ -351,7 +351,7 @@ const Creators = () => {
                   </div>
                 </div>
                 <div className="story-content">
-                  <p>"The platform helped me turn my passion into a full-time income. I love the variety of brands and campaigns available."</p>
+                  <p>"I've won products worth $2,000, got affiliate deals, and even attended exclusive events. This platform opened so many doors!"</p>
                 </div>
                 <div className="story-stats">
                   <div className="story-stat">
@@ -399,19 +399,19 @@ const Creators = () => {
       <section className="final-cta creators-cta">
         <div className="container">
           <div className="cta-content">
-            <h2>Ready to start <span>earning from your creativity?</span></h2>
+            <h2>Ready to start <span>winning rewards?</span></h2>
             <div className="cta-stats">
               <div className="cta-stat">
                 <span className="cta-number">$2.5M+</span>
-                <span className="cta-label">Paid to Creators</span>
+                <span className="cta-label">Rewards Distributed</span>
               </div>
               <div className="cta-stat">
-                <span className="cta-number">15K+</span>
+                <span className="cta-number">25K+</span>
                 <span className="cta-label">Active Creators</span>
               </div>
             </div>
-            <button className="cta-primary large">Join CreatorHub Today</button>
-            <p className="cta-subtext">Free to join • No follower requirements • Get paid fast</p>
+            <button className="cta-primary large">Join as Creator</button>
+            <p className="cta-subtext">Free to join • Submit tryouts • Win amazing rewards</p>
           </div>
         </div>
       </section>

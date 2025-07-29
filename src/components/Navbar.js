@@ -6,12 +6,12 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-container">
         <div className="nav-logo">
-          <h2>CreatorHub</h2>
+          <h2>TryoutHub</h2>
         </div>
         <div className="nav-links">
           <Link to="/">For Brands</Link>
           <Link to="/creators">For Creators</Link>
-          <button className="login-btn">Get Started</button>
+          <button className="login-btn">Join Platform</button>
         </div>
       </div>
     </nav>
