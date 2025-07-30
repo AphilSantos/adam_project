@@ -660,11 +660,31 @@ html {
 }
 
 .trust-logos {
-    display: flex;
-    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.trust-logos-track {
+    display: inline-flex;
     gap: 4rem;
-    flex-wrap: wrap;
     align-items: center;
+    animation: marquee 30s linear infinite;
+    padding-right: 4rem;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.trust-logos:hover .trust-logos-track {
+    animation-play-state: paused;
 }
 
 .logo-placeholder {
@@ -789,12 +809,26 @@ html {
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 3rem;
-    max-width: 1200px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1400px;
     margin: 0 auto;
     position: relative;
     z-index: 2;
+}
+
+@media (max-width: 1200px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
 
 .benefit-card {
@@ -864,6 +898,11 @@ html {
     border-color: rgba(102, 126, 234, 0.2);
 }
 
+.benefit-card:nth-child(4) .benefit-icon {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(245, 158, 11, 0.1));
+    border-color: rgba(251, 191, 36, 0.2);
+}
+
 .benefit-card:hover .benefit-icon {
     transform: scale(1.1) rotate(5deg);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -895,6 +934,10 @@ html {
 
 .benefit-card:nth-child(3) {
     animation-delay: 0.3s;
+}
+
+.benefit-card:nth-child(4) {
+    animation-delay: 0.4s;
 }
 
 /* How It Works Section */

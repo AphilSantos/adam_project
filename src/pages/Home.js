@@ -72,21 +72,24 @@ const Home = () => {
             <p className="trust-text">Trusted by leading brands, leagues, streamers & athletes</p>
           </ScrollAnimatedSection>
           <div className="trust-logos">
-            <ScrollAnimatedSection animationType="scroll-animate-stagger" delay={100}>
-              <div className="logo-placeholder">Brand 1</div>
-            </ScrollAnimatedSection>
-            <ScrollAnimatedSection animationType="scroll-animate-stagger" delay={200}>
-              <div className="logo-placeholder">Brand 2</div>
-            </ScrollAnimatedSection>
-            <ScrollAnimatedSection animationType="scroll-animate-stagger" delay={300}>
-              <div className="logo-placeholder">Brand 3</div>
-            </ScrollAnimatedSection>
-            <ScrollAnimatedSection animationType="scroll-animate-stagger" delay={400}>
-              <div className="logo-placeholder">Brand 4</div>
-            </ScrollAnimatedSection>
-            <ScrollAnimatedSection animationType="scroll-animate-stagger" delay={500}>
-              <div className="logo-placeholder">Brand 5</div>
-            </ScrollAnimatedSection>
+            <div className="trust-logos-track">
+              <div className="logo-placeholder">Nike</div>
+              <div className="logo-placeholder">Adidas</div>
+              <div className="logo-placeholder">ESPN</div>
+              <div className="logo-placeholder">Netflix</div>
+              <div className="logo-placeholder">Spotify</div>
+              <div className="logo-placeholder">TikTok</div>
+              <div className="logo-placeholder">YouTube</div>
+              <div className="logo-placeholder">Twitch</div>
+              <div className="logo-placeholder">Nike</div>
+              <div className="logo-placeholder">Adidas</div>
+              <div className="logo-placeholder">ESPN</div>
+              <div className="logo-placeholder">Netflix</div>
+              <div className="logo-placeholder">Spotify</div>
+              <div className="logo-placeholder">TikTok</div>
+              <div className="logo-placeholder">YouTube</div>
+              <div className="logo-placeholder">Twitch</div>
+            </div>
           </div>
         </div>
       </section>
@@ -104,8 +107,8 @@ const Home = () => {
             <ScrollAnimatedSection animationType="scroll-animate-scale" delay={100}>
               <div className="benefit-card">
                 <div className="benefit-icon">💰</div>
-                <h3>Flexible Reward Options</h3>
-                <p>Reward creators with cash via Stripe, products, promotional features, affiliate links, or exclusive experiences. Choose what works for your brand.</p>
+                <h3>Seamless Workflow</h3>
+                <p>Our platform offers a seamless workflow that simplifies every step — from launching a design contest to collecting submissions and announcing winners.</p>
               </div>
             </ScrollAnimatedSection>
             <ScrollAnimatedSection animationType="scroll-animate-scale" delay={200}>
@@ -120,6 +123,13 @@ const Home = () => {
                 <div className="benefit-icon">📈</div>
                 <h3>Brand Dashboard & Analytics</h3>
                 <p>Manage all your briefs, review submissions, track performance metrics, and handle payments seamlessly from one dashboard.</p>
+              </div>
+            </ScrollAnimatedSection>
+            <ScrollAnimatedSection animationType="scroll-animate-scale" delay={400}>
+              <div className="benefit-card">
+                <div className="benefit-icon">🤝</div>
+                <h3>Recruit a Fan</h3>
+                <p>The conclusion of each competition don't have to be the end of every collaboration. Let this platform serve as the catalyst of your long-term partnership with your talented creators.</p>
               </div>
             </ScrollAnimatedSection>
           </div>
