@@ -6,8 +6,8 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>CreatorHub</h3>
-            <p>Performance-based creator marketing that actually works.</p>
+            <h3>DraftBoard</h3>
+            <p>The ultimate creator tryout & UGC marketplace connecting brands with talented creators.</p>
             <div className="footer-contact">
               <p>1234 Innovation Drive</p>
               <p>San Francisco, CA 94105</p>
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2025 CreatorHub. All rights reserved.</p>
+          <p>&copy; 2025 DraftBoard. All rights reserved.</p>
         </div>
       </div>
     </footer>

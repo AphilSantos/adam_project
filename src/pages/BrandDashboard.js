@@ -54,14 +54,7 @@ const BrandDashboard = () => {
     }));
   };
 
-  const getStatusColor = (status) => {
-    switch (status) {
-      case 'new': return '#94a3b8';
-      case 'shortlisted': return '#f59e0b';
-      case 'winner': return '#10b981';
-      default: return '#94a3b8';
-    }
-  };
+
 
   return (
     <div className="dashboard-container">
