@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ScrollAnimatedSection from '../components/ScrollAnimatedSection';
 
 const Creators = () => {
@@ -43,7 +44,10 @@ const Creators = () => {
           <div className="hero-content">
             <h1>Create for the Brands <span>You Believe In</span></h1>
             <p>Join the ultimate creator tryout marketplace. Submit your best content to brands, leagues, streamers, and athletes. Win cash, products, promo features, and exclusive experiences.</p>
-            <button className="cta-primary">Join as Creator</button>
+            <div className="dual-cta-buttons">
+              <Link to="/signup/creator" className="cta-primary">Join As Creator</Link>
+              <Link to="/signup/brand" className="cta-secondary">Join As Brand</Link>
+            </div>
           </div>
           <div className="hero-visual">
             <div className="creator-earnings-card">
@@ -203,7 +207,7 @@ const Creators = () => {
             <h2>The Ultimate Tryout Platform</h2>
             <p>We've built the perfect marketplace for creators to showcase their talent and win amazing rewards from top brands.</p>
           </div>
-          <div className="benefits-grid">
+          <div className="benefits-grid three-items">
             <div className="benefit-card">
               <div className="benefit-icon">💰</div>
               <h3>Multiple Reward Types</h3>
@@ -410,7 +414,10 @@ const Creators = () => {
                 <span className="cta-label">Active Creators</span>
               </div>
             </div>
-            <button className="cta-primary large">Join as Creator</button>
+            <div className="dual-cta-buttons">
+              <Link to="/signup/creator" className="cta-primary large">Join As Creator</Link>
+              <Link to="/signup/brand" className="cta-secondary large">Join As Brand</Link>
+            </div>
             <p className="cta-subtext">Free to join • Submit tryouts • Win amazing rewards</p>
           </div>
         </div>

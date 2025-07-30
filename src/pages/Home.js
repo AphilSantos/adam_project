@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ScrollAnimatedSection from '../components/ScrollAnimatedSection';
 
 const Home = () => {
@@ -37,9 +38,12 @@ const Home = () => {
       <section className="hero">
         <div className="hero-container">
           <div className="hero-content">
-            <h1>From Fans to <span>Content Collaborators</span></h1>
-            <p>Post briefs and discover talented creators through our tryout marketplace. Get submissions from creators worldwide and reward the best with cash, products, promo, or experiences.</p>
-            <button className="cta-primary">Post Your First Brief</button>
+            <h1>CREATE WITH YOUR COMMUNITY<span></span></h1>
+            <p>Brands post incentivized briefs to attract passionate creators, resulting in authentic content from the people who know your product best. </p>
+            <div className="dual-cta-buttons">
+              <Link to="/signup/brand" className="cta-primary">Join As Brand</Link>
+              <Link to="/signup/creator" className="cta-secondary">Join As Creator</Link>
+            </div>
           </div>
           <div className="hero-visual">
             <div className="hero-card">
@@ -100,36 +104,36 @@ const Home = () => {
           <ScrollAnimatedSection animationType="scroll-animate">
             <div className="section-header">
               <span className="section-tag">ADVANTAGES</span>
-              <h2>Why Brands Choose Us</h2>
+              <h2>Why It Works</h2>
             </div>
           </ScrollAnimatedSection>
           <div className="benefits-grid">
             <ScrollAnimatedSection animationType="scroll-animate-scale" delay={100}>
               <div className="benefit-card">
                 <div className="benefit-icon">💰</div>
-                <h3>Seamless Workflow</h3>
-                <p>Our platform offers a seamless workflow that simplifies every step — from launching a design contest to collecting submissions and announcing winners.</p>
+                <h3>Authentic Content</h3>
+                <p>Our offerings are designed to attract a brand's truest community members to participate in content creation, as opposed only strictly cash offers, attracting money hungry creators.</p>
               </div>
             </ScrollAnimatedSection>
             <ScrollAnimatedSection animationType="scroll-animate-scale" delay={200}>
               <div className="benefit-card">
                 <div className="benefit-icon">🎯</div>
-                <h3>Quality Creator Submissions</h3>
-                <p>Receive high-quality tryouts from creators worldwide. Review submissions in an organized gallery with creator profiles and easy filtering.</p>
+                <h3>Faster and More</h3>
+                <p>Our offerings allow brands to curate creators fast and easy. Brands can post a variety of briefs and attract quantity of creators.</p>
               </div>
             </ScrollAnimatedSection>
             <ScrollAnimatedSection animationType="scroll-animate-scale" delay={300}>
               <div className="benefit-card">
                 <div className="benefit-icon">📈</div>
-                <h3>Brand Dashboard & Analytics</h3>
-                <p>Manage all your briefs, review submissions, track performance metrics, and handle payments seamlessly from one dashboard.</p>
+                <h3>User Profiling</h3>
+                <p>Both the brand and the creator have a profile and a dashboard. Even if the creator doesn't win the specified contest, the brand can reach out to them with other offerings. </p>
               </div>
             </ScrollAnimatedSection>
             <ScrollAnimatedSection animationType="scroll-animate-scale" delay={400}>
               <div className="benefit-card">
                 <div className="benefit-icon">🤝</div>
-                <h3>Recruit a Fan</h3>
-                <p>The conclusion of each competition don't have to be the end of every collaboration. Let this platform serve as the catalyst of your long-term partnership with your talented creators.</p>
+                <h3>How Marketing Is Meant To Be</h3>
+                <p>They say you're supposed to start marketing with your roots. With your true community, the people who love your product the most. This is a tool so those two parties can meet.</p>
               </div>
             </ScrollAnimatedSection>
           </div>
@@ -343,7 +347,10 @@ const Home = () => {
                 <span className="cta-label">Successful Brands</span>
               </div>
             </div>
-            <button className="cta-primary large">Post Your First Brief</button>
+            <div className="dual-cta-buttons">
+              <Link to="/signup/brand" className="cta-primary large">Join As Brand</Link>
+              <Link to="/signup/creator" className="cta-secondary large">Join As Creator</Link>
+            </div>
           </div>
         </div>
       </section>
