@@ -4,14 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 const Navbar = () => {
   const location = useLocation();
   
-  // Determine which signup link to show based on current route
-  const getSignupLink = () => {
-    if (location.pathname === '/creators') {
-      return '/signup/creator';
-    }
-    return '/signup/brand'; // Default to brand signup
-  };
-
+  // Determine which signup text to show based on current route
   const getSignupText = () => {
     if (location.pathname === '/creators') {
       return 'Join as Creator';
@@ -28,7 +21,7 @@ const Navbar = () => {
         <div className="nav-links">
           <Link to="/">For Brands</Link>
           <Link to="/creators">For Creators</Link>
-          <Link to={getSignupLink()} className="login-btn">{getSignupText()}</Link>
+          <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="login-btn">{getSignupText()}</a>
         </div>
       </div>
     </nav>

@@ -40,10 +40,10 @@ const Home = () => {
           <div className="hero-content">
             <h1>CREATE WITH YOUR COMMUNITY<span></span></h1>
             <p>Brands post incentivized briefs to attract passionate creators, resulting in authentic content from the people who know your product best. </p>
-            <div className="dual-cta-buttons">
-              <Link to="/signup/brand" className="cta-primary">Join As Brand</Link>
-              <Link to="/signup/creator" className="cta-secondary">Join As Creator</Link>
-            </div>
+                         <div className="dual-cta-buttons">
+               <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="cta-primary">Join As Brand</a>
+               <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="cta-secondary">Join As Creator</a>
+             </div>
           </div>
           <div className="hero-visual">
             <div className="hero-card">
@@ -155,7 +155,7 @@ const Home = () => {
                   <div className="step-number">01</div>
                   <h3>Post Your Brief</h3>
                   <p>Create detailed briefs with title, description, deadline, and reward type. Set your budget and requirements to attract the right creators.</p>
-                  <button className="step-cta">Create Brief</button>
+                                     <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="step-cta">Create Brief</a>
                 </div>
                 <div className="step-visual">
                   <div className="mockup-card">
@@ -176,7 +176,7 @@ const Home = () => {
                   <div className="step-number">02</div>
                   <h3>Review Submissions</h3>
                   <p>Get notifications when creators submit tryouts. Review submissions in a clean gallery with creator profiles, thumbnails, and submission links.</p>
-                  <button className="step-cta">View Dashboard</button>
+                                     <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="step-cta">View Dashboard</a>
                 </div>
                 <div className="step-visual">
                   <div className="creator-grid">
@@ -203,7 +203,7 @@ const Home = () => {
                   <div className="step-number">03</div>
                   <h3>Select Winners & Reward</h3>
                   <p>Mark submissions as New, Shortlisted, or Winner. Pay cash rewards instantly via Stripe or handle other rewards directly.</p>
-                  <button className="step-cta">Manage Rewards</button>
+                                     <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="step-cta">Manage Rewards</a>
                 </div>
                 <div className="step-visual">
                   <div className="results-card">
@@ -232,7 +232,7 @@ const Home = () => {
           <div className="section-header">
             <h2>Creators Across Every Niche</h2>
             <p>Access talented creators across all content categories and platforms. Post briefs and get submissions from the perfect creators for your brand.</p>
-            <button className="cta-secondary">Browse Creator Network</button>
+                         <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="cta-secondary">Browse Creator Network</a>
           </div>
 
           <div className="creator-categories">
@@ -347,10 +347,10 @@ const Home = () => {
                 <span className="cta-label">Successful Brands</span>
               </div>
             </div>
-            <div className="dual-cta-buttons">
-              <Link to="/signup/brand" className="cta-primary large">Join As Brand</Link>
-              <Link to="/signup/creator" className="cta-secondary large">Join As Creator</Link>
-            </div>
+                         <div className="dual-cta-buttons">
+               <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="cta-primary large">Join As Brand</a>
+               <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="cta-secondary large">Join As Creator</a>
+             </div>
           </div>
         </div>
       </section>

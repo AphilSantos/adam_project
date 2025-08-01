@@ -84,8 +84,8 @@ const CreatorSignup = () => {
   };
 
   const handleSuccessComplete = () => {
-    // Redirect to creator dashboard (to be created later)
-    window.location.href = '/creators';
+    // Redirect to creator dashboard
+    window.location.href = '/dashboard/creator';
   };
 
   const nextStep = () => {

@@ -6,6 +6,7 @@ import Creators from './pages/Creators';
 import BrandSignup from './pages/BrandSignup';
 import CreatorSignup from './pages/CreatorSignup';
 import BrandDashboard from './pages/BrandDashboard';
+import CreatorDashboard from './pages/CreatorDashboard';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -15,6 +16,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/dashboard/brand" element={<BrandDashboard />} />
+          <Route path="/dashboard/creator" element={<CreatorDashboard />} />
           <Route path="/" element={
             <>
               <Navbar />
