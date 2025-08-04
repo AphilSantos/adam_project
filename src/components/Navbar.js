@@ -6,7 +6,7 @@ const Navbar = () => {
   
   // Determine which signup text to show based on current route
   const getSignupText = () => {
-    if (location.pathname === '/creators') {
+    if (location.pathname === '/creator' || location.pathname === '/creators') {
       return 'Join as Creator';
     }
     return 'Join as Brand'; // Default text
@@ -19,9 +19,14 @@ const Navbar = () => {
           <h2>DraftBoard</h2>
         </div>
         <div className="nav-links">
-          <Link to="/">For Brands</Link>
-          <Link to="/creators">For Creators</Link>
-          <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="login-btn">{getSignupText()}</a>
+          <Link to="/brand">For Brands</Link>
+          <Link to="/creator">For Creators</Link>
+          <a 
+            href="https://draftboard-production.up.railway.app/login" 
+            className="login-btn"
+          >
+            {getSignupText()}
+          </a>
         </div>
       </div>
     </nav>

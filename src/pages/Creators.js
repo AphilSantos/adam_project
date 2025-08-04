@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import ScrollAnimatedSection from '../components/ScrollAnimatedSection';
 
 const Creators = () => {
@@ -45,8 +44,8 @@ const Creators = () => {
             <h1>Create for the Brands <span>You Believe In</span></h1>
             <p>Join the ultimate creator tryout marketplace. Submit your best content to brands, leagues, streamers, and athletes. Win cash, products, promo features, and exclusive experiences.</p>
                          <div className="dual-cta-buttons">
-               <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="cta-primary">Join As Creator</a>
-               <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="cta-secondary">Join As Brand</a>
+               <a href="https://draftboard-production.up.railway.app/login" className="cta-primary">Join As Creator</a>
+               <a href="https://draftboard-production.up.railway.app/login" className="cta-secondary">Join As Brand</a>
              </div>
           </div>
           <div className="hero-visual">
@@ -82,7 +81,7 @@ const Creators = () => {
                 <div className="step-number">01</div>
                 <h3>Build Your Creator Profile</h3>
                 <p>Create your profile with username, social handles, portfolio, and follower counts. Showcase your content style and build your Creator ID.</p>
-                                 <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="step-cta">Create Profile</a>
+                                 <a href="https://draftboard-production.up.railway.app/login" className="step-cta">Create Profile</a>
               </div>
               <div className="step-visual">
                 <div className="profile-mockup">
@@ -116,7 +115,7 @@ const Creators = () => {
                 <div className="step-number">02</div>
                 <h3>Browse Brief Marketplace</h3>
                 <p>Explore briefs from brands, leagues, streamers, and athletes. Find opportunities that match your skills and interests.</p>
-                                 <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="step-cta">Browse Briefs</a>
+                                 <a href="https://draftboard-production.up.railway.app/login" className="step-cta">Browse Briefs</a>
               </div>
               <div className="step-visual">
                 <div className="opportunities-grid">
@@ -141,7 +140,7 @@ const Creators = () => {
                 <div className="step-number">03</div>
                 <h3>Submit Your Tryout</h3>
                 <p>Create compelling content and submit via video links or uploads. Add notes to make your tryout stand out from the competition.</p>
-                                 <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="step-cta">Submit Tryout</a>
+                                 <a href="https://draftboard-production.up.railway.app/login" className="step-cta">Submit Tryout</a>
               </div>
               <div className="step-visual">
                 <div className="content-creation-mockup">
@@ -167,7 +166,7 @@ const Creators = () => {
                 <div className="step-number">04</div>
                 <h3>Win Amazing Rewards</h3>
                 <p>Get selected and receive cash via Stripe, products, promotional features, affiliate links, or exclusive experiences.</p>
-                                 <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="step-cta">View Rewards</a>
+                                 <a href="https://draftboard-production.up.railway.app/login" className="step-cta">View Rewards</a>
               </div>
               <div className="step-visual">
                 <div className="earnings-dashboard">
@@ -255,7 +254,7 @@ const Creators = () => {
                     <span className="example-text">"Tech Product Review" - $1,500 cash reward</span>
                   </div>
                 </div>
-                                 <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="card-cta">Browse Brand Briefs</a>
+                                 <a href="https://draftboard-production.up.railway.app/login" className="card-cta">Browse Brand Briefs</a>
               </div>
             </ScrollAnimatedSection>
 
@@ -279,7 +278,7 @@ const Creators = () => {
                     <span className="example-text">"Gaming Tournament Highlights" - VIP event access</span>
                   </div>
                 </div>
-                                 <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="card-cta">View Sports Briefs</a>
+                                 <a href="https://draftboard-production.up.railway.app/login" className="card-cta">View Sports Briefs</a>
               </div>
             </ScrollAnimatedSection>
           </div>
@@ -415,8 +414,8 @@ const Creators = () => {
               </div>
             </div>
                          <div className="dual-cta-buttons">
-               <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="cta-primary large">Join As Creator</a>
-               <a href="https://draftboard-production.up.railway.app/login" target="_blank" rel="noopener noreferrer" className="cta-secondary large">Join As Brand</a>
+               <a href="https://draftboard-production.up.railway.app/login" className="cta-primary large">Join As Creator</a>
+               <a href="https://draftboard-production.up.railway.app/login" className="cta-secondary large">Join As Brand</a>
              </div>
             <p className="cta-subtext">Free to join • Submit tryouts • Win amazing rewards</p>
           </div>

@@ -467,34 +467,34 @@ const CreatorDashboard = () => {
           <nav className="sidebar-nav">
             <div className="nav-section">
               <div className="nav-section-title">Main</div>
-              <a href="#" className={`nav-item ${activeSection === 'overview' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveSection('overview'); }}>
+              <button className={`nav-item ${activeSection === 'overview' ? 'active' : ''}`} onClick={() => setActiveSection('overview')}>
                 <span className="icon">📊</span>
                 Overview
-              </a>
-              <a href="#" className={`nav-item ${activeSection === 'briefs' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveSection('briefs'); }}>
+              </button>
+              <button className={`nav-item ${activeSection === 'briefs' ? 'active' : ''}`} onClick={() => setActiveSection('briefs')}>
                 <span className="icon">🎯</span>
                 Browse Briefs
-              </a>
-              <a href="#" className={`nav-item ${activeSection === 'submissions' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveSection('submissions'); }}>
+              </button>
+              <button className={`nav-item ${activeSection === 'submissions' ? 'active' : ''}`} onClick={() => setActiveSection('submissions')}>
                 <span className="icon">📤</span>
                 My Submissions
-              </a>
-              <a href="#" className={`nav-item ${activeSection === 'submit' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveSection('submit'); }}>
+              </button>
+              <button className={`nav-item ${activeSection === 'submit' ? 'active' : ''}`} onClick={() => setActiveSection('submit')}>
                 <span className="icon">➕</span>
                 Submit Tryout
-              </a>
+              </button>
             </div>
             
             <div className="nav-section">
               <div className="nav-section-title">Account</div>
-              <a href="#" className={`nav-item ${activeSection === 'profile' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveSection('profile'); }}>
+              <button className={`nav-item ${activeSection === 'profile' ? 'active' : ''}`} onClick={() => setActiveSection('profile')}>
                 <span className="icon">👤</span>
                 Profile
-              </a>
-              <a href="#" className="nav-item">
+              </button>
+              <button className="nav-item">
                 <span className="icon">⚙️</span>
                 Settings
-              </a>
+              </button>
             </div>
           </nav>
         </div>

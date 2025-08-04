@@ -3454,30 +3454,37 @@ and Dashboard Styles */
 }
 
 .nav-item {
-    width: 100%;
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 0.875rem 1.5rem;
+    padding: 0.875rem 1rem;
+    color: #ccc;
+    text-decoration: none !important;
+    border-radius: 12px;
+    margin-bottom: 0.25rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
     background: none;
     border: none;
-    color: #e2e8f0;
-    font-size: 0.95rem;
-    font-weight: 500;
     cursor: pointer;
-    transition: all 0.2s ease;
+    width: 100%;
     text-align: left;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 .nav-item:hover {
-    background: #2d2d2d;
+    background: rgba(255, 255, 255, 0.05);
     color: #00ff88;
+    transform: translateX(4px);
+    text-decoration: none !important;
 }
 
 .nav-item.active {
-    background: linear-gradient(135deg, #00ff88 0%, #32cd32 100%);
-    color: #1a1a1a;
-    box-shadow: 0 4px 12px rgba(0, 255, 136, 0.3);
+    background: rgba(0, 255, 136, 0.15);
+    color: #00ff88;
+    border-left: 3px solid #00ff88;
+    text-decoration: none !important;
 }
 
 .nav-icon {
@@ -4680,6 +4687,13 @@ reator Dashboard Specific Styles */
     margin-bottom: 0.25rem;
     transition: all 0.3s ease;
     font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 .nav-item:hover {
@@ -5084,5 +5098,683 @@ reator Dashboard Specific Styles */
     
     .header-left h1 {
         font-size: 2rem;
+    }
+}
+
+/* Waitlist Page Styles */
+.waitlist-hero {
+    background: linear-gradient(-45deg, #1a1a1a, #2d2d2d, #00ff88, #1a1a1a);
+    background-size: 400% 400%;
+    position: relative;
+    overflow: hidden;
+    animation: gradientFlow 15s ease infinite;
+}
+
+.waitlist-hero::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: gentleFloat 15s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.waitlist-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    animation: gentleFloat 18s cubic-bezier(0.4, 0, 0.6, 1) infinite reverse;
+}
+
+.waitlist-hero .hero-content h1 {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.waitlist-hero .hero-content h1 span {
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.waitlist-hero .hero-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.waitlist-form-container {
+    margin-top: 2rem;
+}
+
+.waitlist-form {
+    max-width: 500px;
+}
+
+.email-input-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 0.5rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.email-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    outline: none;
+    border-radius: 8px;
+}
+
+.email-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.waitlist-submit-btn {
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    color: #1a1a1a;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    min-width: 140px;
+}
+
+.waitlist-submit-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+}
+
+.waitlist-submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.form-subtext {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.success-message {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 2rem;
+}
+
+.success-message h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.success-message p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+}
+
+.waitlist-stats-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    animation: heroCardFloat 6s ease-in-out infinite;
+}
+
+.stats-header {
+    margin-bottom: 1.5rem;
+}
+
+.stats-label {
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    color: #1a1a1a;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stats-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.stat-number {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.stat-label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+.stats-progress {
+    margin-top: 1.5rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* Features Preview Section */
+.features-preview {
+    padding: 6rem 0;
+    background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card.featured {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+}
+
+.featured-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    color: #1a1a1a;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: inherit;
+}
+
+.feature-card p {
+    color: inherit;
+    opacity: 0.8;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.feature-example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.example-amount {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: inherit;
+}
+
+.example-label {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 0.25rem;
+}
+
+/* How It Works Preview */
+.how-it-works-preview {
+    padding: 6rem 0;
+    background: #ffffff;
+}
+
+.steps-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.step-preview {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: #f8fafc;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.step-preview:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.step-preview .step-number {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.step-preview .step-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+}
+
+.step-preview .step-content p {
+    color: #718096;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Social Proof Section */
+.social-proof {
+    padding: 6rem 0;
+    background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    flex-shrink: 0;
+}
+
+.author-info h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.25rem;
+}
+
+.author-info span {
+    font-size: 0.9rem;
+    color: #718096;
+}
+
+/* Waitlist CTA */
+.waitlist-cta {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.waitlist-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+    animation: gentleFloat 20s ease-in-out infinite;
+}
+
+.waitlist-cta .cta-content h2 {
+    color: #ffffff;
+}
+
+.waitlist-cta .cta-content h2 span {
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.waitlist-cta .cta-content p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.waitlist-cta .cta-stat {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.waitlist-cta .cta-number {
+    color: #ffffff;
+}
+
+.waitlist-cta .cta-label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner-ring {
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design for Waitlist */
+@media (max-width: 768px) {
+    .waitlist-hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .email-input-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .waitlist-submit-btn {
+        width: 100%;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .steps-preview {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .waitlist-stats-card {
+        padding: 1.5rem;
+    }
+    
+    .stat-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .waitlist-hero .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+    }
+    
+    .step-preview {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .step-preview .step-number {
+        align-self: center;
+    }
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 1rem;
+    animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.modal-close-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.modal-header h2 span {
+    color: #667eea;
+    -webkit-text-fill-color: #667eea;
+}
+
+.modal-header p {
+    color: #888;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.modal-close-btn-secondary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.modal-close-btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .modal-header h2 {
+        font-size: 1.5rem;
     }
 }
