@@ -21,12 +21,9 @@ const Navbar = () => {
         <div className="nav-links">
           <Link to="/brand">For Brands</Link>
           <Link to="/creator">For Creators</Link>
-          <a 
-            href="https://draftboard-production.up.railway.app/login" 
-            className="login-btn"
-          >
+          <Link to="/dash" className="login-btn">
             {getSignupText()}
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

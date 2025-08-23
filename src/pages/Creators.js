@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ScrollAnimatedSection from '../components/ScrollAnimatedSection';
 
 const Creators = () => {
@@ -43,10 +44,10 @@ const Creators = () => {
           <div className="hero-content">
             <h1>Create for the Brands <span>You Believe In</span></h1>
             <p>Join the ultimate creator tryout marketplace. Submit your best content to brands, leagues, streamers, and athletes. Win cash, products, promo features, and exclusive experiences.</p>
-                         <div className="dual-cta-buttons">
-               <a href="https://draftboard-production.up.railway.app/login" className="cta-primary">Join As Creator</a>
-               <a href="https://draftboard-production.up.railway.app/login" className="cta-secondary">Join As Brand</a>
-             </div>
+                                     <div className="dual-cta-buttons">
+              <Link to="/dash" className="cta-primary">Join As Creator</Link>
+              <Link to="/brand" className="cta-secondary">Join As Brand</Link>
+            </div>
           </div>
           <div className="hero-visual">
             <div className="creator-earnings-card">
@@ -81,7 +82,7 @@ const Creators = () => {
                 <div className="step-number">01</div>
                 <h3>Build Your Creator Profile</h3>
                 <p>Create your profile with username, social handles, portfolio, and follower counts. Showcase your content style and build your Creator ID.</p>
-                                 <a href="https://draftboard-production.up.railway.app/login" className="step-cta">Create Profile</a>
+                                 <Link to="/dash" className="step-cta">Create Profile</Link>
               </div>
               <div className="step-visual">
                 <div className="profile-mockup">
@@ -115,7 +116,7 @@ const Creators = () => {
                 <div className="step-number">02</div>
                 <h3>Browse Brief Marketplace</h3>
                 <p>Explore briefs from brands, leagues, streamers, and athletes. Find opportunities that match your skills and interests.</p>
-                                 <a href="https://draftboard-production.up.railway.app/login" className="step-cta">Browse Briefs</a>
+                                 <Link to="/dash" className="step-cta">Browse Briefs</Link>
               </div>
               <div className="step-visual">
                 <div className="opportunities-grid">
@@ -140,7 +141,7 @@ const Creators = () => {
                 <div className="step-number">03</div>
                 <h3>Submit Your Tryout</h3>
                 <p>Create compelling content and submit via video links or uploads. Add notes to make your tryout stand out from the competition.</p>
-                                 <a href="https://draftboard-production.up.railway.app/login" className="step-cta">Submit Tryout</a>
+                                 <Link to="/dash" className="step-cta">Submit Tryout</Link>
               </div>
               <div className="step-visual">
                 <div className="content-creation-mockup">
@@ -166,7 +167,7 @@ const Creators = () => {
                 <div className="step-number">04</div>
                 <h3>Win Amazing Rewards</h3>
                 <p>Get selected and receive cash via Stripe, products, promotional features, affiliate links, or exclusive experiences.</p>
-                                 <a href="https://draftboard-production.up.railway.app/login" className="step-cta">View Rewards</a>
+                                 <Link to="/dash" className="step-cta">View Rewards</Link>
               </div>
               <div className="step-visual">
                 <div className="earnings-dashboard">
@@ -254,7 +255,7 @@ const Creators = () => {
                     <span className="example-text">"Tech Product Review" - $1,500 cash reward</span>
                   </div>
                 </div>
-                                 <a href="https://draftboard-production.up.railway.app/login" className="card-cta">Browse Brand Briefs</a>
+                                 <Link to="/dash" className="card-cta">Browse Brand Briefs</Link>
               </div>
             </ScrollAnimatedSection>
 
@@ -278,7 +279,7 @@ const Creators = () => {
                     <span className="example-text">"Gaming Tournament Highlights" - VIP event access</span>
                   </div>
                 </div>
-                                 <a href="https://draftboard-production.up.railway.app/login" className="card-cta">View Sports Briefs</a>
+                                 <Link to="/dash" className="card-cta">View Sports Briefs</Link>
               </div>
             </ScrollAnimatedSection>
           </div>
@@ -413,10 +414,10 @@ const Creators = () => {
                 <span className="cta-label">Active Creators</span>
               </div>
             </div>
-                         <div className="dual-cta-buttons">
-               <a href="https://draftboard-production.up.railway.app/login" className="cta-primary large">Join As Creator</a>
-               <a href="https://draftboard-production.up.railway.app/login" className="cta-secondary large">Join As Brand</a>
-             </div>
+                                     <div className="dual-cta-buttons">
+              <Link to="/dash" className="cta-primary large">Join As Creator</Link>
+              <Link to="/brand" className="cta-secondary large">Join As Brand</Link>
+            </div>
             <p className="cta-subtext">Free to join • Submit tryouts • Win amazing rewards</p>
           </div>
         </div>
