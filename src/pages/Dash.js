@@ -5,7 +5,7 @@ const Dash = () => {
   return (
     <div className="dash-container">
       <iframe
-        src="https://dashdraftboard.vercel.app/login"
+        src="https://draftboard-production.up.railway.app/login"
         title="Dash Draft Board"
         className="dash-iframe"
         frameBorder="0"
