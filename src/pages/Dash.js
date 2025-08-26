@@ -5,7 +5,7 @@ const Dash = () => {
   return (
     <div className="dash-container">
       <iframe
-        src="https://draftboard-production.up.railway.app/login"
+        src="https://draftboard-production.up.railway.app/"
         title="Dash Draft Board"
         className="dash-iframe"
         frameBorder="0"
