@@ -62,8 +62,7 @@ const BrandDashboard = () => {
       <div className="dashboard-sidebar">
         <div className="sidebar-header">
           <div className="brand-logo">
-            <div className="logo-icon">📋</div>
-            <h3>DraftBoard</h3>
+            <img src="/logo.svg" alt="DraftBoard Logo" className="dashboard-logo-image" />
           </div>
         </div>
 
@@ -73,49 +72,49 @@ const BrandDashboard = () => {
               className={`nav-item ${activeTab === 'overview' ? 'active' : ''}`}
               onClick={() => setActiveTab('overview')}
             >
-              <span className="nav-icon">📊</span>
+              <img src="/Dashboard 1.png" alt="Dashboard" className="nav-icon" />
               Overview
             </button>
             <button 
               className={`nav-item ${activeTab === 'briefs' ? 'active' : ''}`}
               onClick={() => setActiveTab('briefs')}
             >
-              <span className="nav-icon">📝</span>
+              <img src="/Brief 2.png" alt="Briefs" className="nav-icon" />
               My Briefs
             </button>
             <button 
               className={`nav-item ${activeTab === 'submissions' ? 'active' : ''}`}
               onClick={() => setActiveTab('submissions')}
             >
-              <span className="nav-icon">📥</span>
+              <img src="/Clipboard 1.png" alt="Submissions" className="nav-icon" />
               Submissions
             </button>
             <button 
               className={`nav-item ${activeTab === 'create' ? 'active' : ''}`}
               onClick={() => setActiveTab('create')}
             >
-              <span className="nav-icon">➕</span>
+              <img src="/Campaign 1.png" alt="Create Brief" className="nav-icon" />
               Create a Brief
             </button>
             <button 
               className={`nav-item ${activeTab === 'creators' ? 'active' : ''}`}
               onClick={() => setActiveTab('creators')}
             >
-              <span className="nav-icon">👥</span>
+              <img src="/User Profile 1.png" alt="Creators" className="nav-icon" />
               Creators
             </button>
             <button 
               className={`nav-item ${activeTab === 'rewards' ? 'active' : ''}`}
               onClick={() => setActiveTab('rewards')}
             >
-              <span className="nav-icon">🎁</span>
+              <img src="/Trophy 1.png" alt="Rewards" className="nav-icon" />
               Rewards
             </button>
             <button 
               className={`nav-item ${activeTab === 'settings' ? 'active' : ''}`}
               onClick={() => setActiveTab('settings')}
             >
-              <span className="nav-icon">⚙️</span>
+              <img src="/Task 1.png" alt="Settings" className="nav-icon" />
               Settings
             </button>
           </div>
@@ -123,11 +122,11 @@ const BrandDashboard = () => {
           <div className="nav-section">
             <div className="section-title">Account</div>
             <button className="nav-item">
-              <span className="nav-icon">🎁</span>
+              <img src="/Trophy 1.png" alt="Rewards" className="nav-icon" />
               Rewards
             </button>
             <button className="nav-item">
-              <span className="nav-icon">⚙️</span>
+              <img src="/Task 1.png" alt="Settings" className="nav-icon" />
               Settings
             </button>
           </div>
@@ -141,7 +140,7 @@ const BrandDashboard = () => {
             <h1>Welcome, Nike Basketball</h1>
             <div className="user-menu">
               <button className="user-avatar">
-                <span>👤</span>
+                <img src="/User Profile 1.png" alt="User" className="user-avatar-img" />
               </button>
             </div>
           </div>
@@ -168,27 +167,33 @@ const BrandDashboard = () => {
 
               {/* Quick Actions */}
               <div className="quick-actions">
-                <div className="action-card" onClick={() => setActiveTab('create')}>
-                  <div className="action-icon">📝</div>
-                  <div className="action-content">
-                    <h3>Post a Brief</h3>
-                    <p>Create a campaign or brief to invite creators to submit content.</p>
-                  </div>
-                </div>
-                <div className="action-card" onClick={() => setActiveTab('briefs')}>
-                  <div className="action-icon">📋</div>
-                  <div className="action-content">
-                    <h3>View My Briefs</h3>
-                    <p>See all active and past briefs in one place.</p>
-                  </div>
-                </div>
-                <div className="action-card" onClick={() => setActiveTab('creators')}>
-                  <div className="action-icon">👥</div>
-                  <div className="action-content">
-                    <h3>Discover Creators</h3>
-                    <p>Browse creator profiles and invite them to your briefs.</p>
-                  </div>
-                </div>
+                                 <div className="action-card" onClick={() => setActiveTab('create')}>
+                   <div className="action-icon">
+                     <img src="/Campaign 1.png" alt="Post Brief" />
+                   </div>
+                   <div className="action-content">
+                     <h3>Post a Brief</h3>
+                     <p>Create a campaign or brief to invite creators to submit content.</p>
+                   </div>
+                 </div>
+                                 <div className="action-card" onClick={() => setActiveTab('briefs')}>
+                   <div className="action-icon">
+                     <img src="/Brief 2.png" alt="View Briefs" />
+                   </div>
+                   <div className="action-content">
+                     <h3>View My Briefs</h3>
+                     <p>See all active and past briefs in one place.</p>
+                   </div>
+                 </div>
+                                 <div className="action-card" onClick={() => setActiveTab('creators')}>
+                   <div className="action-icon">
+                     <img src="/User Profile 1.png" alt="Discover Creators" />
+                   </div>
+                   <div className="action-content">
+                     <h3>Discover Creators</h3>
+                     <p>Browse creator profiles and invite them to your briefs.</p>
+                   </div>
+                 </div>
               </div>
 
               {/* Recent Submissions */}
@@ -198,7 +203,9 @@ const BrandDashboard = () => {
                   {recentSubmissions.map(submission => (
                     <div key={submission.id} className="submission-card">
                       <div className="submission-thumbnail">
-                        <div className="thumbnail-placeholder">📹</div>
+                        <div className="thumbnail-placeholder">
+                         <img src="/Video 1.png" alt="Video" />
+                       </div>
                       </div>
                       <div className="submission-info">
                         <h4>{submission.creatorName}</h4>

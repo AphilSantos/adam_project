@@ -209,12 +209,16 @@ const Creators = () => {
           </div>
           <div className="benefits-grid three-items">
             <div className="benefit-card">
-              <div className="benefit-icon">💰</div>
+              <div className="benefit-icon">
+               <img src="/Dollar.png" alt="Money" />
+             </div>
               <h3>Multiple Reward Types</h3>
               <p>Win cash payments, products, promotional features, affiliate opportunities, or exclusive experiences based on your tryout quality.</p>
             </div>
             <div className="benefit-card">
-              <div className="benefit-icon">🎯</div>
+              <div className="benefit-icon">
+               <img src="/Target 1.png" alt="Target" />
+             </div>
               <h3>Real-Time Status Tracking</h3>
               <p>Monitor your submissions with live status updates: New, Shortlisted, or Winner. Stay informed throughout the selection process.</p>
             </div>
@@ -239,7 +243,9 @@ const Creators = () => {
             <ScrollAnimatedSection animationType="scroll-animate-left">
               <div className="opportunity-type-card">
                 <div className="card-header">
-                  <div className="card-icon">🏆</div>
+                  <div className="card-icon">
+               <img src="/Trophy 1.png" alt="Trophy" />
+             </div>
                   <h3>Brand Briefs</h3>
                 </div>
                 <div className="card-content">

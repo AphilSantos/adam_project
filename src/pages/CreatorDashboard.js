@@ -96,38 +96,46 @@ const CreatorDashboard = () => {
       </div>
 
       <div className="stats-overview">
-        <div className="stat-card">
-          <div className="stat-header">
-            <div className="stat-title">Available Briefs</div>
-            <div className="stat-icon">🎯</div>
-          </div>
-          <div className="stat-value">{stats.activeBriefs}</div>
-          <div className="stat-change">2 new today</div>
-        </div>
-        <div className="stat-card">
-          <div className="stat-header">
-            <div className="stat-title">Submissions This Week</div>
-            <div className="stat-icon">📤</div>
-          </div>
-          <div className="stat-value">{stats.submissionsThisWeek}</div>
-          <div className="stat-change">+1 from last week</div>
-        </div>
-        <div className="stat-card">
-          <div className="stat-header">
-            <div className="stat-title">Total Wins</div>
-            <div className="stat-icon">🏆</div>
-          </div>
-          <div className="stat-value">{stats.totalWins}</div>
-          <div className="stat-change">Last win: 5 days ago</div>
-        </div>
-        <div className="stat-card">
-          <div className="stat-header">
-            <div className="stat-title">Total Earnings</div>
-            <div className="stat-icon">💰</div>
-          </div>
-          <div className="stat-value">${stats.totalEarnings}</div>
-          <div className="stat-change">This month</div>
-        </div>
+                 <div className="stat-card">
+           <div className="stat-header">
+             <div className="stat-title">Available Briefs</div>
+             <div className="stat-icon">
+               <img src="/Target 1.png" alt="Available Briefs" />
+             </div>
+           </div>
+           <div className="stat-value">{stats.activeBriefs}</div>
+           <div className="stat-change">2 new today</div>
+         </div>
+                 <div className="stat-card">
+           <div className="stat-header">
+             <div className="stat-title">Submissions This Week</div>
+             <div className="stat-icon">
+               <img src="/Clipboard 1.png" alt="Submissions" />
+             </div>
+           </div>
+           <div className="stat-value">{stats.submissionsThisWeek}</div>
+           <div className="stat-change">+1 from last week</div>
+         </div>
+                 <div className="stat-card">
+           <div className="stat-header">
+             <div className="stat-title">Total Wins</div>
+             <div className="stat-icon">
+               <img src="/Trophy 1.png" alt="Total Wins" />
+             </div>
+           </div>
+           <div className="stat-value">{stats.totalWins}</div>
+           <div className="stat-change">Last win: 5 days ago</div>
+         </div>
+                 <div className="stat-card">
+           <div className="stat-header">
+             <div className="stat-title">Total Earnings</div>
+             <div className="stat-icon">
+               <img src="/Dollar.png" alt="Total Earnings" />
+             </div>
+           </div>
+           <div className="stat-value">${stats.totalEarnings}</div>
+           <div className="stat-change">This month</div>
+         </div>
       </div>
 
       <div className="dashboard-content">
@@ -184,15 +192,18 @@ const CreatorDashboard = () => {
             </div>
             <div className="card-content">
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <button className="btn-primary" onClick={() => setActiveSection('briefs')}>
-                  🎯 Browse Briefs
-                </button>
-                <button className="btn-secondary" onClick={() => setActiveSection('submissions')}>
-                  📤 My Submissions
-                </button>
-                <button className="btn-secondary" onClick={() => setActiveSection('profile')}>
-                  👤 Edit Profile
-                </button>
+                                 <button className="btn-primary" onClick={() => setActiveSection('briefs')}>
+                   <img src="/Target 1.png" alt="Browse Briefs" className="btn-icon" />
+                   Browse Briefs
+                 </button>
+                                 <button className="btn-secondary" onClick={() => setActiveSection('submissions')}>
+                   <img src="/Clipboard 1.png" alt="My Submissions" className="btn-icon" />
+                   My Submissions
+                 </button>
+                                 <button className="btn-secondary" onClick={() => setActiveSection('profile')}>
+                   <img src="/User Profile 1.png" alt="Edit Profile" className="btn-icon" />
+                   Edit Profile
+                 </button>
               </div>
             </div>
           </div>
@@ -458,8 +469,7 @@ const CreatorDashboard = () => {
         <div className="dashboard-sidebar">
           <div className="sidebar-header">
             <div className="sidebar-logo">
-              <div className="logo-icon">DB</div>
-              <h2>DraftBoard</h2>
+              <img src="/logo.svg" alt="DraftBoard Logo" className="dashboard-logo-image" />
             </div>
             <div className="user-info">Creator Dashboard</div>
           </div>
@@ -467,10 +477,10 @@ const CreatorDashboard = () => {
           <nav className="sidebar-nav">
             <div className="nav-section">
               <div className="nav-section-title">Main</div>
-              <button className={`nav-item ${activeSection === 'overview' ? 'active' : ''}`} onClick={() => setActiveSection('overview')}>
-                <span className="icon">📊</span>
-                Overview
-              </button>
+                             <button className={`nav-item ${activeSection === 'overview' ? 'active' : ''}`} onClick={() => setActiveSection('overview')}>
+                 <img src="/Dashboard 1.png" alt="Overview" className="icon" />
+                 Overview
+               </button>
               <button className={`nav-item ${activeSection === 'briefs' ? 'active' : ''}`} onClick={() => setActiveSection('briefs')}>
                 <span className="icon">🎯</span>
                 Browse Briefs

@@ -110,14 +110,18 @@ const Home = () => {
           <div className="benefits-grid">
             <ScrollAnimatedSection animationType="scroll-animate-scale" delay={100}>
               <div className="benefit-card">
-                <div className="benefit-icon">💰</div>
+                <div className="benefit-icon">
+               <img src="/Dollar.png" alt="Money" />
+             </div>
                 <h3>Authentic Content</h3>
                 <p>Our offerings are designed to attract a brand's truest community members to participate in content creation, as opposed only strictly cash offers, attracting money hungry creators.</p>
               </div>
             </ScrollAnimatedSection>
             <ScrollAnimatedSection animationType="scroll-animate-scale" delay={200}>
               <div className="benefit-card">
-                <div className="benefit-icon">🎯</div>
+                <div className="benefit-icon">
+               <img src="/Target 1.png" alt="Target" />
+             </div>
                 <h3>Faster and More</h3>
                 <p>Our offerings allow brands to curate creators fast and easy. Brands can post a variety of briefs and attract quantity of creators.</p>
               </div>
@@ -267,11 +271,11 @@ const Home = () => {
           <div className="network-stats">
             <div className="stat">
               <span className="stat-number">25K+</span>
-              <span className="stat-label">Talented Creators</span>
+                             <span className="stat-label-green">Talented Creators</span>
             </div>
             <div className="stat">
               <span className="stat-number">1.2K+</span>
-              <span className="stat-label">Successful Briefs</span>
+                             <span className="stat-label-green">Successful Briefs</span>
             </div>
             <div className="stat">
               <span className="stat-number">$2.5M+</span>

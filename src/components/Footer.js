@@ -6,7 +6,9 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>DraftBoard</h3>
+            <div className="footer-logo">
+              <img src="/logo.svg" alt="DraftBoard Logo" className="footer-logo-image" />
+            </div>
             <p>The ultimate creator tryout & UGC marketplace connecting brands with talented creators.</p>
             <div className="footer-contact">
               <p>1234 Innovation Drive</p>
